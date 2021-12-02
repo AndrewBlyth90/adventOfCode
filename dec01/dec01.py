@@ -15,11 +15,6 @@ def calculateIncreases():
             increases += 1
     print("The answer for part one of dec01 is: ", increases)
 
-# Iterate over data
-# add the sums of index, index + 1 and index + 2
-# push this onto an array
-# return the array
-# compare to previous array
 
 def slidingWindow():
     increaseArray = []
