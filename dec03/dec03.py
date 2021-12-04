@@ -30,8 +30,6 @@ def first_problem(data):
     epsilon = calculate_epsilon(gamma)
     return int(gamma, 2) * int(epsilon, 2)
 
-
 if __name__ == '__main__':
     data = format_data()
     print('The answer to the first problem is: ', first_problem(data))
-    # print('The answer to the second problem is: ', secondProblem(data))
