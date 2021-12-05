@@ -25,14 +25,16 @@ def first_problem(data):
                 count[(num, y1)] += 1
     return len(list(filter((lambda num: num > 1), count.values())))
 
-
+#
 # def second_problem(data):
 #     count = defaultdict(lambda: 0)
 #     for element in data:
 #         beginning, end = element.split('->')
 #         x1, y1 = [int(coord) for coord in beginning.split(',')]
 #         x2, y2 = [int(coord) for coord in end.split(',')]
-#
+#         for x, y in itertools.product(range((x1, x2) + 1), range(max(y1, y2) + 1)):
+#             for x, y in zip(x, y):
+#                 count[(x, y)] += 1
 #     return len(list(filter((lambda num: num > 1), count.values())))
 
 
