@@ -48,12 +48,11 @@ def calculate_sum(board):
 
 
 def first_problem(numbers, boards):
-    for index, number in enumerate(numbers):
+    for number in numbers:
         for board in boards:
             mark_board(board, number)
             if check_board(board):
                 return calculate_sum(board)*number
-
 
 if __name__ == '__main__':
     numbers, boards = format_data()

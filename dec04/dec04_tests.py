@@ -18,6 +18,7 @@ mock_boards = [
 class dec04_test(unittest.TestCase):
     def test_first_problem(self):
         self.assertEqual(dec04.first_problem(mock_numbers, mock_boards), 4512)
+        self.assertEqual(dec04.second_problem(mock_numbers, mock_boards), 1924)
 
 
 if __name__ == '__main__':
