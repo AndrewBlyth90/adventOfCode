@@ -8,9 +8,6 @@ def format_data():
     return input_data
 
 
-mock_data = [3, 4, 3, 1, 2]
-
-
 def first_problem(data, depth):
     temp_array = data.copy()
     if depth > 0:
