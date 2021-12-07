@@ -1,5 +1,3 @@
-import copy
-
 from aocd import get_data
 
 
