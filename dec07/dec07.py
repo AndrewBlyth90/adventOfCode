@@ -10,6 +10,16 @@ def format_data():
     return input_data
 
 
+def second_problem(data):
+    total = []
+    for position in range(max(data)):
+        temp = []
+        for crab in data:
+            temp.append(abs(crab - position) + sum(range(crab, position)))
+        total.append(sum(temp))
+    return min(total)
+
+
 def first_problem(data):
     total = []
     for position in range(max(data)):
