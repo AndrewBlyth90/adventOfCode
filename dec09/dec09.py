@@ -1,5 +1,4 @@
 from aocd import get_data
-import numpy as np
 
 
 def format_data():
