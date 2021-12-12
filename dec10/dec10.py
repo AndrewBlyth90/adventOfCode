@@ -50,6 +50,23 @@ def first_problem(data):
     return total
 
 
+def second_problem(data):
+    total = 0
+    closing_tags = ')]}>'
+    for string in data:
+        current_opening_tag = []
+        for char in string:
+            if char in closing_tags:
+                matching_tag = check_char(char)
+                if matching_tag == current_opening_tag[-1]:
+                    current_opening_tag.pop()
+                    continue
+                total += get_value(char)
+                break
+            current_opening_tag.append(char)
+    return total
+
+
 if __name__ == '__main__':
     data = format_data()
     print('The answer to the first problem is: ', first_problem(data))
