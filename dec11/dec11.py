@@ -1,4 +1,3 @@
-from __future__ import annotations
 from aocd import get_data
 from typing import Generator
 
